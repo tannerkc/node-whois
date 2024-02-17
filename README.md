@@ -1,44 +1,25 @@
 # Node WHOIS
 
-[![Build Status](https://drone.io/github.com/FurqanSoftware/node-whois/status.png)](https://drone.io/github.com/FurqanSoftware/node-whois/latest)
-
 Node WHOIS is a WHOIS client for Node.js.
 
 ## Installation
 
-### Global
-
-    $ npm install -g whois
-
-#### Usage
-
-    whois [options] address
-
-    Options:
-      --version      Show version number                                   [boolean]
-      -s, --server   whois server                                    [default: null]
-      -f, --follow   number of times to follow redirects                [default: 0]
-      -p, --proxy    SOCKS proxy                                     [default: null]
-      -v, --verbose  show verbose results                 [boolean] [default: false]
-      -b, --bind     bind to a local IP address                      [default: null]
-      -h, --help     Show help                            [boolean] [default: false]
-
-### Local
-
-    $ npm install whois
+```shell
+    $ npm install @whois-es6
+```
 
 #### Usage
 
 ```js
-var whois = require('whois')
-whois.lookup('google.com', function(err, data) {
+import { lookup } from '@whois-es6'
+lookup('google.com', function(err, data) {
 	console.log(data)
 })
 ```
 
 You may pass an object in between the address and the callback function to tweak the behavior of the lookup function:
 
-```js
+```json
 {
 	"server":  "",   // this can be a string ("host:port") or an object with host and port as its keys; leaving it empty makes lookup rely on servers.json
 	"follow":  2,    // number of times to follow redirects
@@ -61,8 +42,8 @@ Contributions are welcome.
 
 Node WHOIS is available under the [BSD (2-Clause) License](http://opensource.org/licenses/BSD-2-Clause).
 
-## Other Projects Using Node WHOIS
+## Attribution
 
-- [Dots](https://github.com/FurqanSoftware/dots): Tiny networking toolkit. Uses Node WHOIS to perform WHOIS lookups for domains and IPs.
+- [WHOIS](https://github.com/FurqanSoftware/node-whois): The original node WHOIS that this is based on
 
-If you are using Node WHOIS in a project please send a pull request to add it to the list.
+This repo was started to fix punycode deprecation for a person project.
