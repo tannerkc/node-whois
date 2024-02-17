@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hjr265/node-whois"
+    "url": "git://github.com/tannerkc/node-whois"
   },
   "keywords": [
     "whois"
@@ -21,9 +21,9 @@
   "author": "Tanner Cottle",
   "license": "FreeBSD",
   "bugs": {
-    "url": "https://github.com/hjr265/node-whois/issues"
+    "url": "https://github.com/tannerkc/node-whois/issues"
   },
-  "homepage": "https://github.com/hjr265/node-whois",
+  "homepage": "https://github.com/tannerkc/node-whois",
   "devDependencies": {
     "mocha": "^9.1.3"
   },
