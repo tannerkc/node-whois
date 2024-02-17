@@ -1,6 +1,6 @@
 {
   "name": "whois-es6",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A WHOIS client for NodeJS",
   "type": "module",
   "main": "index.js",
