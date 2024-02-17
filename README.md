@@ -5,13 +5,13 @@ Node WHOIS is a WHOIS client for Node.js.
 ## Installation
 
 ```shell
-    $ npm install @whois-es6
+    $ npm install whois-es6
 ```
 
 #### Usage
 
 ```js
-import { lookup } from '@whois-es6'
+import { lookup } from 'whois-es6'
 lookup('google.com', function(err, data) {
 	console.log(data)
 })

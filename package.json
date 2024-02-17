@@ -1,5 +1,5 @@
 {
-  "name": "@whois-es6",
+  "name": "whois-es6",
   "version": "1.0.0",
   "description": "A WHOIS client for NodeJS",
   "type": "module",
