@@ -45,5 +45,6 @@ Node WHOIS is available under the [BSD (2-Clause) License](http://opensource.org
 ## Attribution
 
 - [WHOIS](https://github.com/FurqanSoftware/node-whois): The original node WHOIS that this is based on
+- [WHOIS-JSON](https://www.npmjs.com/package/whois-json): A wrapper for WHOIS that returns JSON data
 
-This repo was started to fix punycode deprecation for a person project.
+This repo was started to fix punycode deprecation in WHOIS for a person project.
