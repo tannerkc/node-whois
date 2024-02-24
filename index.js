@@ -4,7 +4,14 @@ import { SocksClient } from 'socks';
 import url from 'url';
 import parseRawData from './parseRawData.js';
 
-import SERVERS from './servers.json' with { type: "json" };
+// import SERVERS from './servers.json' with { type: "json" };
+
+import { readFile } from 'fs/promises';
+const SERVERS = JSON.parse(
+  await readFile(
+    new URL('./servers.json', import.meta.url)
+  )
+);
 
 const cleanParsingErrors = (string) => {
     return string.replace(/^[:\s]+/, '').replace(/^https?[:\/]+/, '') || string;
